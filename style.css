@@ -1,0 +1,75 @@
+img{
+    width: auto;
+    height: 200px;
+}
+
+.img-wrapper{
+    position: fixed;
+    top: 20%;
+    left:30%;
+}
+
+i{
+    position: absolute;
+    font-size: 50px;
+    cursor: pointer;
+    text-align: center;
+    width: 100vw;
+    
+}
+
+h1{
+    width: 100vw;
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+
+#dark-mode-button{
+    opacity: 0;
+    width: 0;
+    margin:0;
+}
+
+.sun{
+    opacity: 0;
+}
+
+body{
+    margin:0
+}
+
+.theme-wrapper{
+    width:100vw;
+    height:100vh;
+}
+
+/*IN DARK MODE */
+
+#dark-mode-button:checked ~ .symbols .sun{
+    opacity: 100;
+}
+
+#dark-mode-button:checked ~ .symbols .moon{
+    opacity:0
+}
+
+#dark-mode-button:checked ~ .theme-wrapper{
+    background-color: black;
+    color: white;
+}
+
+#dark-mode-button:checked ~ .img-wrapper img{
+    filter: grayscale(100%);
+    
+}
+
+#dark-mode-button:checked ~ .symbols i{
+    background-color: black;
+}
+
+
+
+
+
